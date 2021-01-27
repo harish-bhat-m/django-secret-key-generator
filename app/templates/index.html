@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Django Secret Key Generator</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/static/css/main.css" rel="stylesheet">
+    <script src="/static/scripts/main.js"></script>
+
+</head>
+	<body>
+	    <header>
+	        <h1>Django Secret Key Generator</h1>
+	        <p>Simple django secret key generator in flask</p>
+	    </header>	
+	    
+	    <div class="container">
+	        
+	        <form action="/" method="GET">
+	            <label>Secret Key:</label> 
+	            <input id="id_secret_key" type="text" value="{{key}}" readonly>
+	            <input type="submit" value="Generate New Secret Key">
+	            <input type="button" onclick="copy_to_clipboard()" value="Copy to clipboard">
+	        </form>
+	        
+	    </div>   
+	</body>
+</html>
